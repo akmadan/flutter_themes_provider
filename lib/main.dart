@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Flutter Themes',
         themeMode: Provider.of<ThemeProvider>(context).themeMode,
-        theme: MyThemes.lightTheme,
-        darkTheme: MyThemes.darkTheme,
+        theme: AppThemes.lightTheme,
+        darkTheme: AppThemes.darkTheme,
       ),
     );
   }

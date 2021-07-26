@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 
 class ThemeProvider extends ChangeNotifier {
-  // initially set the themeMode to System Default
   ThemeMode themeMode = ThemeMode.system;
 
   // function to fetch darkmode or lightmode
@@ -15,7 +14,7 @@ class ThemeProvider extends ChangeNotifier {
     }
   }
 
-  // function to toggle the thememode
+  //toggle the theme
   void toggleTheme(bool isOn) {
     themeMode = isOn ? ThemeMode.dark : ThemeMode.light;
     notifyListeners();
